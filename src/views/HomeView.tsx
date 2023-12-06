@@ -1,6 +1,6 @@
-import { Home } from "../components/Home";
+import { Home } from '../components/Home'
 
-export const HomeView = () => {
+export const HomeView: React.FC = () => {
   return (
     <Home />
   )

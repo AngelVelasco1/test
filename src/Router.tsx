@@ -1,8 +1,7 @@
-import './App.css'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HomeView } from './views/HomeView';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HomeView } from './views/HomeView'
 
-export const Router = () => {
+export const Router: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
@@ -11,4 +10,3 @@ export const Router = () => {
     </BrowserRouter>
   )
 }
-

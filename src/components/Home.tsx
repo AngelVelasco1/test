@@ -1,6 +1,7 @@
+import { SidebarView } from '../views/SidebarView'
 
-export const Home = () => {
+export const Home: React.FC = () => {
   return (
-    <h1>Home</h1>
+    <SidebarView />
   )
 }
