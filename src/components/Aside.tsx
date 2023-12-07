@@ -6,11 +6,11 @@ export const Aside: React.FC = () => {
 
   return (
     <aside className="flex flex-col">
-      <div className="flex flex-row justify-evenly xl:justify-between mx-5 items-center">
+      <div className="flex flex-row justify-evenly xl:justify-between mx-10 items-center">
         <h3 className="text-black text-xl">Lo ultimo</h3>
         <a href="">Ver todo</a>
       </div>
-      <div className="flex flex-col m-auto  xl:m-0 xl:ms-5 flex-wrap gap-4">
+      <div className="flex flex-col m-auto  xl:m-0 xl:ms-10 flex-wrap gap-4">
       {sizes.map((size: any) => (
         <Breadcrumbs key={size} size={size}>
           <BreadcrumbItem>Reciente</BreadcrumbItem>
@@ -25,7 +25,7 @@ export const Aside: React.FC = () => {
         <img
           alt="Home"
           src="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-          className="w-1/2 m-auto xl:h-56  xl:w-fit rounded-md object-cover"
+          className="w-1/2 m-auto xl:m-0 xl:h-56  xl:w-fit rounded-md object-cover"
         />
 
         <div className="mt-2">
@@ -58,7 +58,7 @@ export const Aside: React.FC = () => {
         <img
           alt="Home"
           src="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-          className="w-1/2 m-auto xl:h-56  xl:w-fit rounded-md object-cover"
+          className="w-1/2 m-auto xl:m-0 xl:h-56  xl:w-fit rounded-md object-cover"
         />
 
         <div className="mt-2">

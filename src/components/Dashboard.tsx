@@ -7,8 +7,9 @@ import { Secondcard } from "./SecondCard";
 export const Dashboard: React.FC = () => {
   return (
     <>
-      <div className="bg-white rounded-2xl z-0 ">
-        <header className="w-100 bg-white   shadow py-4 px-4 ms-5 me-10">
+      <div className=" bg-white rounded-2xl z-0 ">
+        
+        <header className="w-100 bg-white shadow py-4 px-4 ms-5 me-10 ">
           <div className="header-content flex items-center flex-row">
             <form action="#">
               <div className="hidden md:flex relative">
@@ -110,7 +111,7 @@ export const Dashboard: React.FC = () => {
             </div>
           </div>
         </header>
-        <main className="grid grid-cols-1 xl:grid-cols-[3fr_1.3fr] w-100 h-100  -ml-64 md:ml-0 transition-all duration-150  ease-in ">
+        <main className="grid grid-cols-1 xl:grid-cols-[3fr_1.3fr] w-100 h-100 m-auto transition-all duration-150  ease-in ">
           <div className="main-content flex flex-col  p-4 ms-5">
             <Maincard />
             <Stats />
