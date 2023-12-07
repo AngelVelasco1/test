@@ -110,7 +110,7 @@ export const Dashboard: React.FC = () => {
             </div>
           </div>
         </header>
-        <main className="grid grid-cols-[3fr_1.5fr]  w-100 h-100  -ml-64 md:ml-0 transition-all duration-150  ease-in ">
+        <main className="grid grid-cols-1 xl:grid-cols-[3fr_1.5fr] w-100 h-100  -ml-64 md:ml-0 transition-all duration-150  ease-in ">
           <div className="main-content flex flex-col  p-4 ms-5">
             <Maincard />
             <Stats />

@@ -1,10 +1,23 @@
+import React from "react";
+import { Breadcrumbs, BreadcrumbItem } from "@nextui-org/react";
+
 export const Aside: React.FC = () => {
+    const sizes = ["lg"];
+
   return (
     <aside className=" ">
       <div className="flex flex-row justify-around items-center">
         <h3 className="text-black text-xl">Lo ultimo</h3>
         <a href="">Ver todo</a>
       </div>
+      <div className="flex flex-col flex-wrap gap-4">
+      {sizes.map((size: any) => (
+        <Breadcrumbs key={size} size={size}>
+          <BreadcrumbItem>Reciente</BreadcrumbItem>
+          <BreadcrumbItem>Popular</BreadcrumbItem>
+        </Breadcrumbs>
+      ))}
+    </div>
     <a
         href="#"
         className="flex flex-col  rounded-lg p-4 shadow-sm shadow-indigo-100"

@@ -54,7 +54,7 @@ export const Sidebar: React.FC = () => {
                     <li>
                       <a
                         className="inline-flex items-center w-full px-4 py-2 mt-1 text-base textWhite transition duration-500 ease-in-out transform border-indigo-800 roundedLg hover:border-indigo-800 focus:shadow-outline hover:bg-indigo-600"
-                        href="#"
+                        href="/autors"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
