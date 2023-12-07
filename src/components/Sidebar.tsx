@@ -1,11 +1,11 @@
 export const Sidebar: React.FC = () => {
   return (
     <>
-      <div className="flex h-screen ">
-        <div className="hidden md:flex md:flex-shrink-0">
-          <div className="flex flex-col w-64">
-            <div className="flex flex-col flex-grow pt-20 overflow-y-auto bg-[#7DA870] border-r">
-              <div className="shadow-2xl bg-zinc-300/30 rounded-2xl py-1  flex flex-col items-center hover:bg-zinc-300/60 dark:highlight-white/5 w-1/3 m-auto pb-5">
+      <div className="flex h-100 t-0 ">
+        <div className="hidden md:flex md:flex-shrink-0 ">
+          <div className="flex flex-col w-64 ">
+            <div className="flex flex-col flex-grow pt-20 w-72 h-full overflow-y-auto bg-[#7DA870] fixed">
+              <div className="shadow-2xl bg-zinc-300/30 rounded-2xl py-1 ms-20  flex flex-col items-center hover:bg-zinc-300/60 dark:highlight-white/5 w-1/3  pb-5">
                   <img src="../src/assets/icon.svg" alt="" className="mt-5 opacity-100 w-1/2" />
                 <button className="hidden roundedLg focus:outline-none focus:shadow-outline">
                   <svg

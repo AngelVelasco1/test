@@ -6,7 +6,8 @@
 :root {
   font-family: 'Red Hat Display';
   font-weight: 500;
-
+  margin: 0;
+  padding: 0;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
 

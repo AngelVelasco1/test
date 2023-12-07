@@ -1,7 +1,10 @@
+import { Maincard } from './Maincard'
+import { Stats } from './Stats'
+
 export const Dashboard: React.FC = () => {
   return (
-    <main className="w-100 h-100 flex flex-col flex-grow -ml-64 md:ml-0 transition-all duration-150   ease-in rounded-xl z-0">
-      <header className="header bg-white   shadow py-4 px-4">
+    <main className="bg-white  w-100 h-100 flex flex-col flex-grow -ml-64 md:ml-0 transition-all duration-150  ease-in rounded-2xl z-0">
+      <header className="header bg-white   shadow py-4 px-4 ms-5">
         <div className="header-content flex items-center flex-row">
           <form action="#">
             <div className="hidden md:flex relative">
@@ -103,10 +106,11 @@ export const Dashboard: React.FC = () => {
           </div>
         </div>
       </header>
-      <div className="main-content flex flex-col flex-grow p-4">
-      
+      <div className="main-content flex flex-col flex-grow p-4 ms-5">
+        <Maincard />
+        <Stats />
+                <Maincard />
 
-       
       </div>
     </main>
   )
