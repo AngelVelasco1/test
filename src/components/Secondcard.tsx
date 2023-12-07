@@ -1,6 +1,6 @@
-export const Maincard: React.FC = () => {
+export const Secondcard: React.FC = () => {
   return (
-<section className="bg-[#E9A763]  py-8 px-4 rounded-2xl">
+<section className="bg-[#343A3F]  py-8 px-4 rounded-2xl">
   <div className="flex justify-center items-center gap-12 lg:gap-24 lg:flex-row flex-col">
     <div className="flex flex-col">
       <p className="mt-3 text-lg font-medium leading-6">

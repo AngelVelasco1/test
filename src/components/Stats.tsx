@@ -4,23 +4,24 @@ export const Stats: React.FC = () => {
   const list = [
     {
       title: "Libreria",
-      value: "124",
+      value: "124"
     },
     {
       title: "Me gusta",
-      value: "155 k",
+      value: "155 k"
     },
     {
       title: "Lectores",
-      value: "8 k",
+      value: "8 k"
     },
     {
       title: "Opiniones",
-      value: "163 k",
-    },
-  ];
+      value: "163 k"
+    }
+  ]
   return (
-    <div className="grid grid-rows-4  grid-flow-col w-4/6 ">
+    <>
+    <div className="grid grid-rows-3 grid-flow-col  ">
       <div className="flex flex-row mt-5 p-0 m-0">
         {list.map((item, index) => (
           <Card
@@ -117,7 +118,9 @@ export const Stats: React.FC = () => {
           <span className="text-gray-500">May 7</span>
         </div>
       </div>
-     
-    </div>
+
+      </div>
+
+    </>
   )
 }
