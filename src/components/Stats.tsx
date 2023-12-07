@@ -22,6 +22,7 @@ export const Stats: React.FC = () => {
   return (
     <>
       <div className="grid grid-rows-3 grid-cols-1 lg:grid-rows-3 lg:grid-cols-[2.2fr_1fr] ">
+        {/* Boxes with stats */}
         <div className="flex flex-row mt-5 p-0 m-0">
           {list.map((item, index) => (
             <Card
@@ -39,9 +40,10 @@ export const Stats: React.FC = () => {
             </Card>
           ))}
         </div>
+        {/* Rigth Notifications */}
         <div className="row-span-3">
-          <div className="flex flex-col-2 justify-evenly my-8">
-            <h2 className="text-black ">Reciente</h2>
+          <div className="flex flex-col-2 justify-between mx-14 mt-5 lg:justify-between lg:my-8 lg:mx-3">
+            <h2 className="text-gray-800 text-xl ">Reciente</h2>
             <a href="">Ver todo</a>
           </div>
           <div className="flex flex-col-2 justify-evenly my-8">
@@ -67,9 +69,9 @@ export const Stats: React.FC = () => {
             <span className="text-gray-500">May 7</span>
           </div>
         </div>
-
+        {/* Profiles cards */}
         <div className="row-span-2 ">
-          <h2 className="text-black text-2xl mt-4 ms-6">Autores</h2>
+          <h2 className="text-black text-2xl ms-6">Autores</h2>
           <article className="flex justify-around  border-2 border-b-zinc-300  bg-white w-5/6 gap-x-44">
             <div className="flex items-start gap-4  sm:p-6 lg:p-8">
               <a href="#" className="block shrink-0">

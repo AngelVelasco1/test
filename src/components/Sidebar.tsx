@@ -14,6 +14,7 @@ export const Sidebar: React.FC = () => {
 
   return (
     <>
+      {/* PC and Tablet Sidebar */}
       <div className="hidden lg:flex lg:text-center h-100   lg:flex-col  bg-[#7DA870] ">
         <div
           className={` ${
@@ -90,6 +91,7 @@ export const Sidebar: React.FC = () => {
           </div>
         </div>
       </div>
+      {/* Mobile Menu */}
       <div className=" lg:hidden top-0 ">
         {/* Icono del menú hamburguesa */}
         <button
