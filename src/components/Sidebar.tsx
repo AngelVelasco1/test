@@ -1,31 +1,33 @@
-import { useState } from "react";
+import { useState } from 'react'
 export const Sidebar: React.FC = () => {
-  const [open, setOpen] = useState(true);
-  const [showMenu, setMenu] = useState(false);
-  const toggleMenu = () => {
-    setMenu(!showMenu);
-  };
+  const [open, setOpen] = useState<boolean>(true)
+  const [showMenu, setMenu] = useState<boolean>(false)
+  const toggleMenu = (): void => {
+    setMenu(!showMenu)
+  }
   const Menus = [
-    { title: "Inicio", icon: "home" },
-    { title: "Libros", icon: "book" },
-    { title: "Autores", icon: "person", href: "autors" },
-    { title: "Lectores ", icon: "group" },
-  ];
+    { title: 'Inicio', icon: 'home' },
+    { title: 'Libros', icon: 'book' },
+    { title: 'Autores', icon: 'person', href: 'autors' },
+    { title: 'Lectores ', icon: 'group' }
+  ]
 
   return (
     <>
       <div className="hidden lg:flex lg:text-center h-100   lg:flex-col  bg-[#7DA870] ">
         <div
           className={` ${
-            open ? "w-64" : "w-20"
+            open ? 'w-64' : 'w-20'
           }   p-5 lg:block  pt-8 relative duration-300 flex   gap-y-10 `}
         >
-          <span  className={`material-symbols-outlined absolute cursor-pointer -right-2 top-9 w-8 
-           border-2 rounded-lg text-md font-bold ${!open && "rotate-180"}`}
-            onClick={() => setOpen(!open)} >
-chevron_left
-</span>
-        
+          <span
+            className={`material-symbols-outlined absolute cursor-pointer -right-2 top-9 w-8 
+           border-2 rounded-lg text-md font-bold ${!open && 'rotate-180'}`}
+            onClick={() => { setOpen(!open) }}
+          >
+            chevron_left
+          </span>
+
           <div className=" shadow-2xl bg-zinc-300/30 rounded-2xl  ms-20  flex flex-col items-center hover:bg-zinc-300/60 dark:highlight-white/5 w-1/3 mt-10  pb-5">
             <img
               src="../src/assets/icon.svg"
@@ -52,16 +54,14 @@ chevron_left
             {Menus.map((Menu, index) => (
               <li
                 key={index}
-                className={`flex   rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-md items-center gap-x-5
-              ${Menu.gap ? "mt-9" : "mt-2"} ${
-                  index === 0 && "bg-light-white"
-                } `}
+                className={`flex rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-md items-center gap-x-5 mt-3
+              `}
               >
                 <span className="material-symbols-outlined">{Menu.icon}</span>
                 <a
                   href={Menu.href}
                   className={`${
-                    !open && "hidden"
+                    !open && 'hidden'
                   } text-white  origin-left duration-200 hover:text-green-900 `}
                 >
                   {Menu.title}
@@ -69,9 +69,9 @@ chevron_left
               </li>
             ))}
           </ul>
-          <div className={`${!open && "hidden"} items-end mt-20`}>
+          <div className={`${!open && 'hidden'} items-end mt-20`}>
             <button className="w-32 flex m-auto justify-around shadow-2xl bg-zinc-300/30 rounded-2xl">
-              crear{" "}
+              Crear
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -102,7 +102,6 @@ chevron_left
             stroke="currentColor"
             className="h-6 w-6"
           >
-            {/* Ícono del menú hamburguesa */}
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -118,14 +117,11 @@ chevron_left
               <a
                 href={Menu.href}
                 key={index}
-                className={`p-2 cursor-pointer hover:bg-light-white text-gray-800 text-sm items-center gap-x-4 ${
-                  Menu.gap ? "mt-4" : "mt-2"
-                } ${index === 0 && "bg-light-white"}`}
+                className={'p-2 cursor-pointer hover:bg-light-white text-gray-800 text-sm items-center gap-x-4 mt-2'}
               >
                 <div className="flex flex-row gap-3 text-[#7DA870]">
-
-                <span className="material-symbols-outlined">{Menu.icon}</span>
-                <span className="text-lg">{Menu.title}</span>
+                  <span className="material-symbols-outlined">{Menu.icon}</span>
+                  <span className="text-lg">{Menu.title}</span>
                 </div>
               </a>
             ))}
@@ -133,5 +129,5 @@ chevron_left
         )}
       </div>
     </>
-  );
-};
+  )
+}

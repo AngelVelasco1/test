@@ -1,5 +1,4 @@
 # Grafosoft Test
-Test Summary
 ## Technologies
 - Programming Language: [TypeScript](https://www.typescriptlang.org)
 - Framework: [React](https://react.dev/)

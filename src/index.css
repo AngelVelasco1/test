@@ -2,35 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  font-family: "Red Hat Display";
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
 
-  :root {
-    font-family: 'Red Hat Display';
-    font-weight: 500;
-    margin: 0;
-    padding: 0;
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 a {
   font-weight: bold;
-  color: #646cff;
+  color: #7DA870;
   text-decoration: inherit;
 }
-a:hover {
-  color: #535bf2;
-}
 
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 
 button {
   border-radius: 8px;

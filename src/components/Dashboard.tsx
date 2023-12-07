@@ -1,14 +1,13 @@
-import { Maincard } from "./Maincard";
-import { Stats } from "./Stats";
+import { Maincard } from './Maincard'
+import { Secondcard } from './Secondcard'
 
-import { Aside } from "./Aside";
-import { Secondcard } from "./SecondCard";
+import { Stats } from './Stats'
+import { Aside } from './Aside'
 
 export const Dashboard: React.FC = () => {
   return (
     <>
-      <div className=" bg-white rounded-2xl z-0 ">
-        
+      <div className=" bg-white rounded-2xl z-0">
         <header className="w-100 bg-white shadow py-4 px-4 ms-5 me-10 ">
           <div className="header-content flex items-center flex-row">
             <form action="#">
@@ -121,5 +120,5 @@ export const Dashboard: React.FC = () => {
         </main>
       </div>
     </>
-  );
-};
+  )
+}

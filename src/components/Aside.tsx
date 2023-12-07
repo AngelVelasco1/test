@@ -1,24 +1,21 @@
-import React from "react";
-import { Breadcrumbs, BreadcrumbItem } from "@nextui-org/react";
+import React from 'react'
+import { Breadcrumbs, BreadcrumbItem } from '@nextui-org/react'
 
 export const Aside: React.FC = () => {
-    const sizes = ["lg"];
-
   return (
     <aside className="flex flex-col">
-      <div className="flex flex-row justify-evenly xl:justify-between mx-10 items-center">
-        <h3 className="text-black text-xl">Lo ultimo</h3>
+      <div className="flex flex-row justify-evenly mx-7 items-center xl:justify-between ">
+        <h3 className="text-gray-800 text-xl">Lo ultimo</h3>
         <a href="">Ver todo</a>
       </div>
-      <div className="flex flex-col m-auto  xl:m-0 xl:ms-10 flex-wrap gap-4">
-      {sizes.map((size: any) => (
-        <Breadcrumbs key={size} size={size}>
-          <BreadcrumbItem>Reciente</BreadcrumbItem>
-          <BreadcrumbItem>Popular</BreadcrumbItem>
-        </Breadcrumbs>
-      ))}
-    </div>
-   <a
+      <div className="flex flex-row m-auto flex-wrap  xl:m-0 xl:ms-7">
+          <Breadcrumbs size="lg">
+            <BreadcrumbItem>Reciente</BreadcrumbItem>
+            <BreadcrumbItem>Popular</BreadcrumbItem>
+          </Breadcrumbs>
+        ))
+      </div>
+      <a
         href="#"
         className="flex flex-col  rounded-lg p-4 shadow-sm shadow-indigo-100"
       >
@@ -27,17 +24,17 @@ export const Aside: React.FC = () => {
           src="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
           className="w-1/2 m-auto xl:m-0 xl:h-56  xl:w-fit rounded-md object-cover"
         />
-
         <div className="mt-2">
           <dl>
             <div>
-              <dd className="font-bold text-lg text-center xl:text-start">La ciudadela</dd>
+              <dd className="font-bold text-lg text-center xl:text-start">
+                La ciudadela
+              </dd>
               <p className="font-normal text-gray-500 text-center xl:text-start">
                 Descrube la emocion de la ciudad
               </p>
             </div>
           </dl>
-
           <div className="flex flex-row gap-5 mt-5 justify-center xl:justify-normal">
             <img
               alt="Speaker"
@@ -45,8 +42,12 @@ export const Aside: React.FC = () => {
               className="h-14 w-14 rounded-lg object-cover "
             />
             <div>
-              <h4 className="text-gray-700 font-bold text-center xl:text-start">David Jones</h4>
-              <p className="text-gray-500 font-normal text-sm text-center xl:text-start">May 6, 2020</p>
+              <h4 className="text-gray-700 font-bold text-center xl:text-start">
+                David Jones
+              </h4>
+              <p className="text-gray-500 font-normal text-sm text-center xl:text-start">
+                May 6, 2020
+              </p>
             </div>
           </div>
         </div>
@@ -64,7 +65,9 @@ export const Aside: React.FC = () => {
         <div className="mt-2">
           <dl>
             <div>
-              <dd className="font-bold text-lg text-center xl:text-start">La ciudadela</dd>
+              <dd className="font-bold text-lg text-center xl:text-start">
+                La ciudadela
+              </dd>
               <p className="font-normal text-gray-500 text-center xl:text-start">
                 Descrube la emocion de la ciudad
               </p>
@@ -78,12 +81,16 @@ export const Aside: React.FC = () => {
               className="h-14 w-14 rounded-lg object-cover "
             />
             <div>
-              <h4 className="text-gray-700 font-bold text-center xl:text-start">David Jones</h4>
-              <p className="text-gray-500 font-normal text-sm text-center xl:text-start">May 6, 2020</p>
+              <h4 className="text-gray-700 font-bold text-center xl:text-start">
+                David Jones
+              </h4>
+              <p className="text-gray-500 font-normal text-sm text-center xl:text-start">
+                May 6, 2020
+              </p>
             </div>
           </div>
         </div>
       </a>
     </aside>
-  );
-};
+  )
+}

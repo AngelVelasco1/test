@@ -9,14 +9,14 @@ export const Secondcard: React.FC = () => {
               className="text-xl text-white hover:text-gray-500"
             >
               Andres nos gustaria Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Id nisi inventore ad porro molestias{" "}
+              adipisicing elit. Id nisi inventore ad porro molestias
             </a>
           </p>
 
           <ol type="1">
-            <li>1. sdfdsf</li>
-            <li>2. dsa</li>
-            <li>sfdd</li>
+            <li>1. Tip 1</li>
+            <li>2. Tip 2</li>
+            <li>3. Tip 3</li>
           </ol>
         </div>
         <div className="w-80">
@@ -28,5 +28,5 @@ export const Secondcard: React.FC = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
