@@ -26,7 +26,7 @@
 4. Succesfull api consumption
 5. Clean code
 
-### Note: The rick and Morty fetching was doing in other page throughout the sidebar. (Click up the section authors on the sidebar)
+**Note: The rick and Morty fetching was doing in other page throughout the sidebar. (Click up the section authors on the sidebar)**
 
 
 ### Autor
